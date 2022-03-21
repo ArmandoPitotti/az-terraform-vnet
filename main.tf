@@ -19,7 +19,7 @@ resource "azurerm_network_security_group" "group" {
     source_port_range          = "*"
     destination_port_range     = "*"
     source_address_prefix      = "*"
-    destination_address_prefix = var.customer_network_range
+    destination_address_prefix = var.external_network_range
   }
 }
 

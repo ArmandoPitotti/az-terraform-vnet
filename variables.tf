@@ -41,7 +41,7 @@ variable "ddos_protection_enabled" {
   default     = false
 }
 
-variable "customer_network_range" {} // module.customer.vnet.address_space.0
+variable "external_network_range" {} // module.customer.vnet.address_space.0
 
 variable "network_security_group"{
   type = bool
